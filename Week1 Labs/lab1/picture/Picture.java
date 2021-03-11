@@ -35,7 +35,7 @@ public class Picture
 		wall.makeVisible();
 		
 		window = new Square();
-		window.changeColor("black");
+		window.changeColor("blue");
 		window.moveHorizontal(20);
 		window.moveVertical(100);
 		window.makeVisible();
