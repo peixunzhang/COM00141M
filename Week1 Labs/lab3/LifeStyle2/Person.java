@@ -2,8 +2,8 @@
 /**
  * To demonstrate boolean.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Zhang Peixun) 
+ * @version (2021.03.12)
  */
 public class Person
 {
@@ -30,13 +30,37 @@ public class Person
 	
 	public void displayProfile()
 	{
-	   System.out.println("………Health Profile……");
+	   System.out.println("ï¿½ï¿½ï¿½Health Profileï¿½ï¿½");
 	   
 	   System.out.println("Healthy pulse check = " + checkPulse());
 	   System.out.print("Abusing Body = " + checkAbuser());
 	   
 	}
 	//Put curseAndSwear method here
+	public void curseAndSwear()
+	{
+		int numb = (int)(Math.random()*6)+1;
+		switch (numb) {
+		case 1:
+			System.out.println("Oh damn!! What a nuisance");
+			break;
+		case 2:
+			System.out.println("Oh damn!! What a nuisance2");
+			break;
+		case 3:
+			System.out.println("Oh damn!! What a nuisance3");
+			break;
+		case 4:
+			System.out.println("Oh damn!! What a nuisance4");
+			break;
+		case 5:
+			System.out.println("Oh damn!! What a nuisance5");
+			break;
+			
+		}
+			
+	}
+	
 	
 	
 }

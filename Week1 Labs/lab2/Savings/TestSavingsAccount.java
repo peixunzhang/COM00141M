@@ -5,6 +5,13 @@ public class TestSavingsAccount {
 		/* Create SavingsAccount object and 
 		 * call the methods
 		 */
+		SavingsAccount sa=new SavingsAccount();
+		sa.initialiseAccountDetails();
+		sa.deposit();
+		sa.printStatement();
+		sa.withdraw();
+		sa.printStatement();
+		
 		
 	}
 }

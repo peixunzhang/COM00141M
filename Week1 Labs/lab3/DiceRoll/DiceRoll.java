@@ -23,7 +23,13 @@ public class DiceRoll extends JPanel
 		g.setColor(Color.black);
 		g.drawString("First dice = " + firstDice, 20, 100); 
 		g.drawString("Second Dice = " + secondDice, 120, 100); // print out the dice values
-   }
+		if ( (firstDice + secondDice == 7)) {
+			g.drawString("Bonus throw - roll again", 20, 150);
+		} else {
+			g.drawString( "sorry try again", 20, 150);
+		}
+   
+    }
 }
 
 

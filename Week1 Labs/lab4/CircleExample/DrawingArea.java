@@ -19,7 +19,7 @@ public class DrawingArea extends JPanel {
 	 // The 'inner loop' 			
 	  for( horz = 0; horz < size; horz++ ) {
 	  // Create a new Color object 				
-	     int icol = 65536*horz*12 + (vert*12);
+	     int icol = 256*horz*12 + (vert*12);
 	     Color c = new Color(icol); 
 	     // Set the drawing colour.
 	     g.setColor(c);

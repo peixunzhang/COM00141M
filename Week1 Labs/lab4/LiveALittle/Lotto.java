@@ -2,27 +2,18 @@
 /**
  * Write a description of class Lotto here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Zhnag peixun) 
+ * @version (2021.03.14)
  */
 public class Lotto
 {
 	
 	//Put the luckyDip() method here
-	
-	
-
-
-
-
-
-
-        //Test
-	public static void main (String args[]) {
-		
-		Lotto l=new Lotto();
-		//l.luckyDip();
+	public  void luckyDip()
+	{
+		int count;
+		 for (count = 1; count < 7; count++) {
+			 System.out.println("Ball" + count + "=" + (int)((Math.random()*49)+1));
+		 }
 	}
-
-	
 }
