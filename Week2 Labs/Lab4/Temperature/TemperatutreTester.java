@@ -6,6 +6,8 @@ public class TemperatutreTester {
 		Temperature t=new Temperature();
 		t.basicArrayAccess();
 		t.interactiveArray();
+		t.basicArrayAccess();
+
 
 	}
 

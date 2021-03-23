@@ -6,6 +6,7 @@ public class TestMathDemo {
 			MathDemo result=new MathDemo();
 			result.rollDice();
 			result.findThePower();
+			
 	}
 
 }

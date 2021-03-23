@@ -49,7 +49,7 @@ public class Notebook
         }
         else if(noteNumber < numberOfNotes()) {
             // This is a valid note number, so we can print it.
-            System.out.println(notes.get(noteNumber));
+            System.out.println("index " + noteNumber + " is " + notes.get(noteNumber));
         }
         else {
             // This is not a valid note number, so do nothing.
@@ -60,7 +60,7 @@ public class Notebook
     {
         int index = 0;
         while(index < notes.size()) {
-            System.out.println(notes.get(index));
+            System.out.println("index " + index + " is " + notes.get(index));
             index++;
         }
     }

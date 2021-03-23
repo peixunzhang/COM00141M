@@ -2,9 +2,10 @@
 /**
  * To demonstrate boolean.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Zhang Peixun) 
+ * @version (2021.03.16)
  */
+import java.util.*; 
 public class Person
 {
 	double cmHeight;
@@ -46,12 +47,32 @@ public class Person
 	
 	public void displayProfile()
 	{
-	   System.out.println("………Health Profile……");
+	   System.out.println("ï¿½ï¿½ï¿½Health Profileï¿½ï¿½");
 	   
 	   System.out.println("Healthy pulse check = " + checkPulse());
-	   System.out.print("Abusing Body = " + checkAbuser());
+	   System.out.println("Abusing Body = " + checkAbuser());
+	   System.out.println("BMI= " );
+	   System.out.println( getBMI() );
 	   
 	}
 	
+	public void promptdata()
+	{
+		 Scanner sc=new Scanner(System.in);
+	     System.out.println("Enter weight ");
+	     kgWeight = sc.nextDouble();
+	     System.out.println("Enter height ");
+	     cmHeight = sc.nextDouble();
+	     System.out.println("Enter weeklyAlcholUnits ");
+	     weeklyAlcholUnits = sc.nextInt();
+	     System.out.println("Enter restPulse ");
+	     restPulse = sc.nextInt();
+	}
 	
+	public double getBMI()
+	{
+		double bmi;
+		bmi = kgWeight/(cmHeight*cmHeight)*10000;
+		return bmi;
+	}
 }

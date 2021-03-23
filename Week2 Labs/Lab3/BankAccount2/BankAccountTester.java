@@ -2,8 +2,8 @@
 /**
  * A Class to test the BankAccount Class and demonstrate the use of the Static attribute
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Zhang Peixun) 
+ * @version (2021.03.18)
  */
 public class BankAccountTester
 {
@@ -21,7 +21,7 @@ public class BankAccountTester
       
       //The code appears to set the interest rate for account2 only, 
       //However interestRate is a static variable, so will apply to all accounts
-      account2.setInterestRate(10);
+      account2.setInterestRate(50);
       
       //Now check the interest rate for both accounts
       System.out.println("After set: Interest Rate for account1: "  + account1.getInterestRate());

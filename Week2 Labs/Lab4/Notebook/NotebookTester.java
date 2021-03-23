@@ -4,6 +4,7 @@ public class NotebookTester {
 	public static void main(String[] args) {
 		//Create Notebook objects and test the methods
 		Notebook n=new Notebook();
+		Notebook my=new Notebook();
 		
 		n.storeNote("Monday");
 		n.storeNote("Tuesday");
@@ -12,6 +13,15 @@ public class NotebookTester {
 		
 		n.showNote(2);
 		n.listNotes();
+		
+		my.storeNote("A");
+		my.storeNote("B");
+		my.storeNote("C");
+		my.storeNote("D");
+		my.showNote(0);
+		my.listNotes();
+
+		
 
 	}
 

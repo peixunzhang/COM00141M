@@ -2,8 +2,8 @@
 /**
  * Write a description of class StudentTesting here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Zhang Peixun) 
+ * @version (2021.03.17)
  */
 public class Course
 {  
