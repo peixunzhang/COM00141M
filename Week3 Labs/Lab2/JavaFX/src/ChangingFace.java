@@ -53,13 +53,16 @@ public class ChangingFace extends Application {
 		 
 		 // create a button that will make the face frown         
 		 Button frownButton = new Button("Frown"); 
+		 
+		 //think button
+		 Button thinkButton = new Button("Think");
 	 
 	     // create and configure a horizontal container to hold the buttons    
 		 HBox buttonBox = new HBox(10);         
 		 buttonBox.setAlignment(Pos.CENTER); 
 		 
 		 //add the buttons to the horizontal container         
-		 buttonBox.getChildren().addAll(smileButton, frownButton);
+		 buttonBox.getChildren().addAll(smileButton, thinkButton, frownButton);
 		 
 		 // create and configure a vertical container to hold the button box and the face group         
 		 VBox root = new VBox(10); 
@@ -77,6 +80,9 @@ public class ChangingFace extends Application {
 		 
 		 // supply the code that is executed when the frown button is pressed   
 		 frownButton.setOnAction(e -> mouth.setLength(180)); 
+		 
+		 //when the think button is pressed
+		 thinkButton.setOnAction(e -> mouth.setRadiusY(0));
 		 
 		 // add the scene to the stage, then set the title        
 		 stage.setScene(scene);         

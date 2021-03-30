@@ -28,7 +28,22 @@
 			// create and configure a label which will cause the text to be displayed        
 			Button pushMeButton = new Button();         
 			pushMeButton.setText("Type something in the box then push me");         
-			pushMeButton.setOnAction(e -> pushMeLabel.setText("You entered: " + pushMeTextField.getText()));         
+			pushMeButton.setOnAction(e -> pushMeLabel.setText("You entered: " + pushMeTextField.getText()));
+			
+			//a) pushing the button could display your text in upper case
+			Button uppercaseButton = new Button();
+			uppercaseButton.setText("Upper case");
+			uppercaseButton.setOnAction(e -> pushMeLabel.setText("Upper case: " + pushMeTextField.getText().toUpperCase()));
+			
+			
+			
+			//b) add an extra button and when pushed, the number of letters of the text will be displayed.
+			Button lenButton = new Button();
+			lenButton.setText("The number of letters of the text: ");
+			lenButton.setOnAction(e -> pushMeLabel.setText("Total letters: " + pushMeTextField.getText().length()));
+			
+			
+			
 			
 			// create and configure a VBox to hold our components               
 			VBox root = new VBox();         
@@ -36,7 +51,7 @@
 			root.setAlignment(Pos.CENTER); 
 			
 			//add the components to the VBox         
-			root.getChildren().addAll(pushMeTextField, pushMeButton, pushMeLabel); 
+			root.getChildren().addAll(pushMeTextField, pushMeButton, pushMeLabel, uppercaseButton,lenButton); 
 	
 	
 			// create a new scene         
@@ -47,6 +62,9 @@
 			stage.setTitle("Push Me");         
 			stage.show();             
 	}     
+
+
+
 
 	public static void main(String[] args)     
 	{         
